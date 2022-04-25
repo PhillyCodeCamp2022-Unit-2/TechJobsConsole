@@ -45,13 +45,13 @@ namespace TechJobsConsole
 
             List<Dictionary<string, string>> jobs = new List<Dictionary<string, string>>();
 
-            foreach (Dictionary<string, string> row in AllJobs)
+            foreach (Dictionary<string, string> job in AllJobs)
             {
-                string aValue = row[column];
+                string aValue = job[column];
 
                 if (aValue.Contains(value))
                 {
-                    jobs.Add(row);
+                    jobs.Add(job);
                 }
             }
 

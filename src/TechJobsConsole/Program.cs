@@ -36,7 +36,7 @@ namespace TechJobsConsole
 
                     if (columnChoice.Equals("all"))
                     {
-                        PrintJobs(JobData.FindAll());
+                        PrintJobs(JobData.FindAll()); // --> JobData.FindAll() returns AllJobs list
                     }
                     else
                     {
@@ -119,6 +119,7 @@ namespace TechJobsConsole
         private static void PrintJobs(List<Dictionary<string, string>> someJobs)
         {
             Console.WriteLine("PrintJobs is not implemented yet");
+            Console.WriteLine(someJobs);
         }
     }
 }
